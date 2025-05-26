@@ -1,12 +1,10 @@
-import { type User } from "../types/user";
-
-let users: User[] = [];
+import { UserModel } from '../schemas/userSchema'
+import { type User } from '../schemas/userSchema'
 
 export const getAllUsers = async (): Promise<User[]> => {
-  return users;
-};
+  return await UserModel.find().lean()
+}
 
 export const createUser = async (user: User): Promise<User> => {
-  users.push(user);
-  return user;
-};
+  return await UserModel.create(user)
+}

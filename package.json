@@ -9,15 +9,19 @@
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^22.15.21",
-    "tsx": "^4.19.4"
+    "supertest": "^7.1.1",
+    "tsx": "^4.19.4",
+    "vitest": "^3.1.4"
   },
   "peerDependencies": {
     "typescript": "^5.8.3"
   },
   "dependencies": {
     "@hono/node-server": "^1.14.2",
+    "@hono/zod-openapi": "^0.19.6",
     "dotenv": "^16.5.0",
     "hono": "^4.7.10",
+    "mongoose": "^8.15.0",
     "prisma": "^6.8.2",
     "zod": "^3.25.28"
   }

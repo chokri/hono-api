@@ -8,6 +8,7 @@ export const getUsers = async (c: Context) => {
 
 export const createUser = async (c: Context) => {
   const body = await c.req.json();
+  console.log({body})
   const user = await userService.createUser(body);
   return c.json(user, 201);
 };
