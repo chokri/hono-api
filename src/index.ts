@@ -1,8 +1,8 @@
 import { serve } from '@hono/node-server'
+import 'dotenv/config'
 import app from './app'
 import { connectDB } from './config/db'
 import { loggerMiddleware } from './middlewares/logger'
-import 'dotenv/config'
 
 const port = parseInt(process.env.PORT || '3000')
 

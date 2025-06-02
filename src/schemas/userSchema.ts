@@ -1,5 +1,5 @@
-import { z } from 'zod'
 import mongoose from 'mongoose'
+import { z } from 'zod'
 import { zodToMongooseSchema } from '../utils/zodToMongoose'
 
 export const userZodSchema = z.object({

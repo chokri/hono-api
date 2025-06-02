@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { z, ZodObject, type ZodRawShape, type ZodTypeAny } from 'zod'
+import { z, ZodObject, type ZodRawShape } from 'zod'
 
 export function zodToMongooseSchema<T extends ZodObject<ZodRawShape>>(zodSchema: T): mongoose.Schema {
   const shape = zodSchema.shape

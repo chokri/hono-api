@@ -1,5 +1,4 @@
-import { UserModel } from '../schemas/userSchema'
-import { type User } from '../schemas/userSchema'
+import { UserModel, type User } from '../schemas/userSchema'
 
 export const getAllUsers = async (): Promise<User[]> => {
   return await UserModel.find().lean()

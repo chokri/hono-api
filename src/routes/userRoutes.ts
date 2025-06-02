@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
-import { getUsers, createUser } from '../controllers/userController'
-import { validateUser } from '../validators/userValidator'
+import { createUser, getUsers } from '../controllers/userController'
 import { swaggerDocs } from '../docs/swagger'
+import { validateUser } from '../validators/userValidator'
 
 const userRoutes = new Hono()
 
